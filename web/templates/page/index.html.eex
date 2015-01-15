@@ -1,0 +1,58 @@
+<div class="ui one column stackable center aligned page grid">
+  <div style="padding-top:200px" class="share-box column twelve wide">
+    <h3>shadowsocks</h3>
+    <div class="ui buttons">
+      <div id="get" class="ui button">get</div>
+      <div class="or"></div>
+      <div id="share" class="ui positive button">share</div>
+    </div>
+    <!-- get shadowsocks !-->
+    <div class="ui modal get">
+      <i class="close icon"></i>
+      <div class="header">
+        对话框标题
+      </div>
+      <div class="content">
+        <div class="left">
+          左边的内容。
+        </div>
+        <div class="right">
+          右边的内容。
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui button">取消</div>
+        <div class="ui button">确定</div>
+      </div>
+    </div>
+    <!-- share shadowsocks !-->
+    <div class="ui modal share">
+      <i class="close icon"></i>
+      <div class="header">
+        对话框标题
+      </div>
+      <div class="content">
+        <div class="left">
+          左边的内容。
+        </div>
+        <div class="right">
+          右边的内容。
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui button">取消</div>
+        <div class="ui button">确定</div>
+      </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#get").click(function() {
+                $('.ui.modal.get').modal("show");
+            });
+            $("#share").click(function() {
+                $('.ui.modal.share').modal("show");
+            });
+        });
+    </script>
+  </div>
+</div>
