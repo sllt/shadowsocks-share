@@ -10,14 +10,11 @@
     <div class="ui modal get">
       <i class="close icon"></i>
       <div class="header">
-        对话框标题
+        Get
       </div>
       <div class="content">
         <div class="left">
-          左边的内容。
-        </div>
-        <div class="right">
-          右边的内容。
+          <%= shadowsocks %>
         </div>
       </div>
       <div class="actions">
@@ -32,11 +29,22 @@
         对话框标题
       </div>
       <div class="content">
-        <div class="left">
-          左边的内容。
-        </div>
-        <div class="right">
-          右边的内容。
+        <div class="center">
+          <form action="/post" method="post" >
+          <div class="ui input">
+            <input type="text" placeholder="host" name="host" class="ui inputbox" />
+          </div>
+          <div class="ui input">
+            <input type="text" placeholder="port" name="port" class="ui inputbox" />
+          </div>
+          <div class="ui input">
+            <input type="text" placeholder="method" name="method" class="ui inputbox" />
+          </div>
+          <div class="ui input">
+            <input type="text" placeholder="password" name="password" class="ui inputbox" />
+          </div>
+          <input type="submit"  value="submit" class="ui button">
+        </form>
         </div>
       </div>
       <div class="actions">
